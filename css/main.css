@@ -30,6 +30,140 @@ body {
   filter: blur(0.1vmin);
   background-image: radial-gradient(ellipse at top, transparent 0%, var(--dark-color)), radial-gradient(ellipse at bottom, var(--dark-color), rgba(145, 233, 255, 0.2)), repeating-linear-gradient(220deg, rgb(0, 0, 0) 0px, rgb(0, 0, 0) 19px, transparent 19px, transparent 22px), repeating-linear-gradient(189deg, rgb(0, 0, 0) 0px, rgb(0, 0, 0) 19px, transparent 19px, transparent 22px), repeating-linear-gradient(148deg, rgb(0, 0, 0) 0px, rgb(0, 0, 0) 19px, transparent 19px, transparent 22px), linear-gradient(90deg, rgb(255, 215, 0), rgb(240, 240, 240));
 }
+.love {
+  position: relative;
+  margin-bottom: 6em;
+  padding-top: 4em;
+  text-align: center;
+}
+@media (min-width: 600px) {
+  .love {
+    left: 50%;
+    margin-bottom: 0;
+    margin-left: -9.375em;
+    padding-top: 10em;
+    transform: translate(-50%, 0);
+  }
+}
+
+.letter {
+  top: 0;
+  left: 0;
+  display: inline-block;
+  font-size: 4vmin;
+  text-shadow: 0 0 0.25em red, 0 0 0.35em red, 0 0 0.45em transparent, 0 0 0.55em transparent, 0 0 0.65em transparent;
+}
+@media (min-width: 600px) {
+  .letter {
+    offset-distance: 0;
+    offset-path: path("m0, 0 c100, -150 200, -150 300, 0");
+  }
+}
+.letter:nth-child(1) {
+  -webkit-animation: twinkle 2.7s infinite 0.6s;
+          animation: twinkle 2.7s infinite 0.6s;
+  offset-distance: 5.5555555556%;
+}
+.letter:nth-child(2) {
+  -webkit-animation: twinkle 2.7s infinite 1.35s;
+          animation: twinkle 2.7s infinite 1.35s;
+  offset-distance: 11.1111111111%;
+}
+.letter:nth-child(3) {
+  -webkit-animation: twinkle 2.7s infinite 2.1s;
+          animation: twinkle 2.7s infinite 2.1s;
+  offset-distance: 16.6666666667%;
+}
+.letter:nth-child(4) {
+  -webkit-animation: twinkle 2.7s infinite 2.25s;
+          animation: twinkle 2.7s infinite 2.25s;
+  offset-distance: 22.2222222222%;
+}
+.letter:nth-child(5) {
+  -webkit-animation: twinkle 2.7s infinite 1.8s;
+          animation: twinkle 2.7s infinite 1.8s;
+  offset-distance: 27.7777777778%;
+}
+.letter:nth-child(6) {
+  -webkit-animation: twinkle 2.7s infinite 1.65s;
+          animation: twinkle 2.7s infinite 1.65s;
+  offset-distance: 33.3333333333%;
+}
+.letter:nth-child(7) {
+  -webkit-animation: twinkle 2.7s infinite 2.25s;
+          animation: twinkle 2.7s infinite 2.25s;
+  offset-distance: 38.8888888889%;
+}
+.letter:nth-child(8) {
+  -webkit-animation: twinkle 2.7s infinite 1.65s;
+          animation: twinkle 2.7s infinite 1.65s;
+  offset-distance: 44.4444444444%;
+}
+.letter:nth-child(9) {
+  -webkit-animation: twinkle 2.7s infinite 2.55s;
+          animation: twinkle 2.7s infinite 2.55s;
+  offset-distance: 50%;
+}
+.letter:nth-child(10) {
+  -webkit-animation: twinkle 2.7s infinite 2.7s;
+          animation: twinkle 2.7s infinite 2.7s;
+  offset-distance: 55.5555555556%;
+}
+.letter:nth-child(11) {
+  -webkit-animation: twinkle 2.7s infinite 1.05s;
+          animation: twinkle 2.7s infinite 1.05s;
+  offset-distance: 61.1111111111%;
+}
+.letter:nth-child(12) {
+  -webkit-animation: twinkle 2.7s infinite 0.6s;
+          animation: twinkle 2.7s infinite 0.6s;
+  offset-distance: 66.6666666667%;
+}
+.letter:nth-child(13) {
+  -webkit-animation: twinkle 2.7s infinite 1.35s;
+          animation: twinkle 2.7s infinite 1.35s;
+  offset-distance: 72.2222222222%;
+}
+.letter:nth-child(14) {
+  -webkit-animation: twinkle 2.7s infinite 1.65s;
+          animation: twinkle 2.7s infinite 1.65s;
+  offset-distance: 77.7777777778%;
+}
+.letter:nth-child(15) {
+  -webkit-animation: twinkle 2.7s infinite 1.5s;
+          animation: twinkle 2.7s infinite 1.5s;
+  offset-distance: 83.3333333333%;
+}
+.letter:nth-child(16) {
+  -webkit-animation: twinkle 2.7s infinite 1.65s;
+          animation: twinkle 2.7s infinite 1.65s;
+  offset-distance: 88.8888888889%;
+}
+.letter:nth-child(17) {
+  -webkit-animation: twinkle 2.7s infinite 1.05s;
+          animation: twinkle 2.7s infinite 1.05s;
+  offset-distance: 94.4444444444%;
+}
+.letter:nth-child(18) {
+  -webkit-animation: twinkle 2.7s infinite 2.7s;
+          animation: twinkle 2.7s infinite 2.7s;
+  offset-distance: 100%;
+}
+.letter:empty {
+  padding: 0 0.2em;
+}
+
+@-webkit-keyframes twinkle {
+  50% {
+    text-shadow: 0 0 0.25em red, 0 0 0.35em red, 0 0 0.45em red, 0 0 0.55em red, 0 0 0.65em red;
+  }
+}
+
+@keyframes twinkle {
+  50% {
+    text-shadow: 0 0 0.25em red, 0 0 0.35em red, 0 0 0.45em red, 0 0 0.55em red, 0 0 0.65em red;
+  }
+}
 
 .flowers {
   position: relative;
@@ -1684,9 +1818,7 @@ body {
     opacity: 1;
   }
 }
-/* ================
-// Structure
-// ============= */
+
 html,
 body {
   height: 100%;
@@ -1698,19 +1830,17 @@ html {
   background: radial-gradient(ellipse at center, #041803, #02110f 100%);
   color: #dadd18;
 }
-/* Estilo de la rosa */
+
 .rose {
   background: radial-gradient(circle, yellow, orange);
 }
 
-/* Estilo de la burbuja */
 .bubble {
   background: #f2fbff;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
   animation: floatBubble 5s infinite ease-in-out;
 }
 
-/* Animación para la burbuja */
 @keyframes floatBubble {
   0%, 100% {
     transform: translateY(0);
